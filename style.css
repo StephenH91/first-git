@@ -1,9 +1,106 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px auto auto auto 50px;
+
+}
+
+
 body {
-    background-color: pink;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #FF4C4C;
+    padding: 5px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    grid-column: span 3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    grid-column: 1/-1;
+    align-content: center;
+
+
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+    grid-column: span 3;
+    grid-row: span 2;
+    flex-wrap: wrap;
+
+}
+
+.footer {
+    background-color: #FF4C4C;
+    grid-column: span 3;
+    color: white;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    border: solid 1px black;
+    height: 200px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.prep {
+    width: 55%;
+    height: auto;
+}
+
+.card img {
+    width: 40px;
+    height: 60px;
+
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, #A94E97, #FF4C4C);
+    color: white;
+}
+
+.start {
+    background-image: linear-gradient(0deg, #A94E97, #FF4C4C);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
 }
